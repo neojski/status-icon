@@ -2,7 +2,9 @@
 Easy way of adding tray icon telling you what's the build status
 
 ## Usage
-`npm install --save-dev status-icon`
+```bash
+npm install --save-dev status-icon
+```
 
 ```js
 var statusIcon = require('status-icon')();
