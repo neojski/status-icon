@@ -1,6 +1,6 @@
 {
   "name": "status-icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "dependencies": {
     "electron-prebuilt": "^1.1.1"
