@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 var prebuilt = require('electron-prebuilt');
 
 module.exports = function () {
-  var ps = spawn(prebuilt, ['electron.js'], {
+  var ps = spawn(prebuilt, [__dirname + '/electron.js'], {
     stdio: [null, null, null, 'ipc']
   });
 
