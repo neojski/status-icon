@@ -11,7 +11,7 @@ var statusIcon = require('status-icon')();
 statusIcon.set('my-icon.png');
 ```
 
-## Why
+## How to use
 Use it with browserify or any of your other build systems:
 ```js
 ...
