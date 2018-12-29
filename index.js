@@ -28,13 +28,13 @@ module.exports = function() {
       }
     },
     ok: function() {
-      ps.send("green.png");
+      ps.send(__dirname + "/green.png");
     },
     error: function() {
-      ps.send("red.png");
+      ps.send(__dirname + "/red.png");
     },
     progress: function() {
-      ps.send("blue.png");
+      ps.send(__dirname + "/blue.png");
     }
   };
 };
