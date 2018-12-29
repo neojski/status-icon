@@ -1,12 +1,18 @@
-var statusIcon = require('./index.js')();
+var statusIcon = require("./index.js")();
 
-let icons = [
-  'green.png',
-  'blue.png',
-  'red.png',
-];
 let i = 0;
-setInterval(function () {
-  i = (i + 1) % 3;
-  statusIcon.set(icons[i]);
+setInterval(function() {
+  i++;
+  switch ((i + 1) % 4) {
+    case 0:
+      statusIcon.ok();
+      break;
+    case 1:
+    case 3:
+      statusIcon.progress();
+      break;
+    case 2:
+      statusIcon.error();
+      break;
+  }
 }, 1000);

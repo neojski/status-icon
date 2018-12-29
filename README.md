@@ -16,13 +16,18 @@ Use it with browserify or any of your other build systems:
 ```js
 ...
 function bundle() {
-  statusIcon.set('my-icon/blue.png');
+  statusIcon.progress();
   var stream = bundler.bundle();
   stream.on('error', function () {
-    statusIcon.set('my-icon/red.png');
+    statusIcon.error();
   });
   stream.(...).on('finish', function () {
-    statusIcon.set('my-icon/green.png');
+    statusIcon.ok();
   });
 }
+```
+
+You can also use your custom images with:
+```js
+statusIcon.set('my-icon.png');
 ```
