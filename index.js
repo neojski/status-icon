@@ -19,7 +19,9 @@ module.exports = function() {
   });
 
   return {
-    destroy: ps.kill,
+    destroy: function() {
+       ps.kill();
+    },
     set: function(icon) {
       if (initialized) {
         ps.send(icon);
