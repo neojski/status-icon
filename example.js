@@ -1,4 +1,4 @@
-var statusIcon = require("./index.js")();
+const statusIcon = require("./index.js")();
 
 let i = 0;
 setInterval(function() {
